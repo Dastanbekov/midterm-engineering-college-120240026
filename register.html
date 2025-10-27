@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Engineering College — official brochure website. Programs, admissions, student life, and contact information.">
+    <title>Engineering College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main">Skip to main content</a>
+<nav id="topNav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top border-bottom border-3 border-primary-subtle">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Engineering College</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-programs.html">About & Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life & News</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex ms-lg-3">
+        <button id="themeToggle" class="btn btn-outline-light btn-sm" type="button" aria-pressed="false" aria-label="Toggle dark mode">Theme</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="spacer-nav"></div>
+    <main id="main" class="pb-5">
+      <section class="container py-5">
+        <h1 class="h2 mb-3">Create Your Applicant Account</h1>
+        <p class="mb-4">Complete the form below to start your application. You’ll be able to upload documents after submission.</p>
+
+        <form id="regForm" class="needs-validation" novalidate>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" name="fullName" required aria-describedby="nameErr">
+              <div id="nameErr" class="invalid-feedback">Enter your full name.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required aria-describedby="emailErr">
+              <div id="emailErr" class="invalid-feedback">Enter a valid email.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone" name="phone" pattern="^[+0-9 ()-]{7,}$" required aria-describedby="phoneErr">
+              <div id="phoneErr" class="invalid-feedback">Enter a valid phone number.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="program" class="form-label">Desired Program</label>
+              <select id="program" name="program" class="form-select" required aria-describedby="programErr">
+                <option value="" selected disabled>Select a program</option>
+                <option>Computer Engineering</option>
+                <option>Electrical Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Software Engineering</option>
+                <option>Renewable Energy</option>
+              </select>
+              <div id="programErr" class="invalid-feedback">Select a program.</div>
+            </div>
+            <div class="col-md-6">
+              <fieldset>
+                <legend class="form-label fs-6">Study Mode</legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="studyMode" id="modeFull" value="full-time" required>
+                  <label class="form-check-label" for="modeFull">Full‑time</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="studyMode" id="modePart" value="part-time" required>
+                  <label class="form-check-label" for="modePart">Part‑time</label>
+                </div>
+                <div class="invalid-feedback d-block" id="modeErr" style="display:none;">Select a study mode.</div>
+              </fieldset>
+            </div>
+            <div class="col-md-6">
+              <label for="intake" class="form-label">Intended Intake</label>
+              <input type="date" class="form-control" id="intake" name="intake" required aria-describedby="intakeErr">
+              <div id="intakeErr" class="invalid-feedback">Choose an intake date.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" minlength="8" required aria-describedby="pwHelp pwErr">
+              <div id="pwHelp" class="form-text">At least 8 characters, include a number.</div>
+              <div id="pwErr" class="invalid-feedback">Password must be at least 8 chars and include a number.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required aria-describedby="cpwErr">
+                <button class="btn btn-outline-secondary" type="button" id="togglePw">Show</button>
+              </div>
+              <div id="cpwErr" class="invalid-feedback">Passwords must match.</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="optional" class="form-label">Scholarship Interest (optional)</label>
+              <select id="optional" name="scholarship" class="form-select">
+                <option value="">No preference</option>
+                <option value="merit">Merit‑based</option>
+                <option value="need">Need‑based</option>
+                <option value="both">Both</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check mt-4">
+                <input class="form-check-input" type="checkbox" value="agree" id="agree" required aria-describedby="agreeErr">
+                <label class="form-check-label" for="agree">I agree to the policy and terms.</label>
+                <div id="agreeErr" class="invalid-feedback">You must accept the policy to continue.</div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="d-grid d-sm-flex gap-3 align-items-center">
+                <button id="regSubmit" class="btn btn-primary" type="submit" disabled>Create Account</button>
+                <div id="regStatus" class="small" aria-live="polite"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+<button id="backToTop" class="btn btn-primary position-fixed" style="right:1rem;bottom:1rem;display:none;" aria-label="Back to top">↑</button>
+
+    <footer class="border-top mt-5 py-4">
+      <div class="container small d-flex flex-column flex-md-row justify-content-between gap-3">
+        <div>&copy; <span id="year"></span> Engineering College. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a class="link-secondary" href="about-programs.html#faq">FAQ</a>
+          <a class="link-secondary" href="contact.html">Contact</a>
+          <a class="link-secondary" href="admissions.html#tuition">Tuition & Fees</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/interactions.js"></script>
+    <script src="assets/js/forms.js"></script>
+  </body>
+</html>

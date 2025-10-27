@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Engineering College — official brochure website. Programs, admissions, student life, and contact information.">
+    <title>Engineering College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main">Skip to main content</a>
+<nav id="topNav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top border-bottom border-3 border-primary-subtle">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Engineering College</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-programs.html">About & Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life & News</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex ms-lg-3">
+        <button id="themeToggle" class="btn btn-outline-light btn-sm" type="button" aria-pressed="false" aria-label="Toggle dark mode">Theme</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="spacer-nav"></div>
+    <main id="main" class="pb-5">
+      <section class="container py-5">
+        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+          <h1 class="h2 mb-0">Student Life & News</h1>
+          <div class="ms-auto d-flex gap-2">
+            <input id="newsSearch" class="form-control form-control-sm" type="search" placeholder="Search news…" aria-label="Search news">
+            <select id="newsFilter" class="form-select form-select-sm" aria-label="Filter news by category">
+              <option value="all" selected>All</option>
+              <option value="clubs">Clubs</option>
+              <option value="events">Events</option>
+              <option value="announcements">Announcements</option>
+            </select>
+          </div>
+        </div>
+        <div id="newsGrid" class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+          <article class="col news-card" data-category="clubs">
+            <div class="card h-100">
+              <img src="assets/img/news-robotics.svg" class="card-img-top" alt="Robotics club working on a robot">
+              <div class="card-body">
+                <h2 class="h5 card-title">Robotics Club Builds Competition Bot</h2>
+                <p class="card-text">Our robotics team is preparing a new bot for the spring challenge. New members welcome!</p>
+              </div>
+            </div>
+          </article>
+          <article class="col news-card" data-category="events">
+            <div class="card h-100">
+              <img src="assets/img/news-open-day.svg" class="card-img-top" alt="Visitors at an open day event">
+              <div class="card-body">
+                <h2 class="h5 card-title">Open Day This Saturday</h2>
+                <p class="card-text">Tour labs, meet faculty, and attend sample lectures. Registration recommended.</p>
+              </div>
+            </div>
+          </article>
+          <article class="col news-card" data-category="announcements">
+            <div class="card h-100">
+              <img src="assets/img/news-scholarship.svg" class="card-img-top" alt="Scholarship announcement poster">
+              <div class="card-body">
+                <h2 class="h5 card-title">New Scholarship Cycle</h2>
+                <p class="card-text">Applications for merit‑based scholarships open next week. Check criteria on Admissions.</p>
+              </div>
+            </div>
+          </article>
+          <article class="col news-card" data-category="clubs">
+            <div class="card h-100">
+              <img src="assets/img/news-devclub.svg" class="card-img-top" alt="Students coding at Dev Club meetup">
+              <div class="card-body">
+                <h2 class="h5 card-title">Dev Club Weekly Meetups</h2>
+                <p class="card-text">Join coding sessions and lightning talks every Friday evening.</p>
+              </div>
+            </div>
+          </article>
+          <article class="col news-card" data-category="events">
+            <div class="card h-100">
+              <img src="assets/img/news-career.svg" class="card-img-top" alt="Career fair with company booths">
+              <div class="card-body">
+                <h2 class="h5 card-title">Spring Career Fair</h2>
+                <p class="card-text">Meet top employers recruiting interns and graduates across disciplines.</p>
+              </div>
+            </div>
+          </article>
+          <article class="col news-card" data-category="announcements">
+            <div class="card h-100">
+              <img src="assets/img/news-calendar.svg" class="card-img-top" alt="Academic calendar illustration">
+              <div class="card-body">
+                <h2 class="h5 card-title">Academic Calendar Posted</h2>
+                <p class="card-text">Dates for intakes, exams, and breaks are live. Plan your semester today.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+<button id="backToTop" class="btn btn-primary position-fixed" style="right:1rem;bottom:1rem;display:none;" aria-label="Back to top">↑</button>
+
+    <footer class="border-top mt-5 py-4">
+      <div class="container small d-flex flex-column flex-md-row justify-content-between gap-3">
+        <div>&copy; <span id="year"></span> Engineering College. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a class="link-secondary" href="about-programs.html#faq">FAQ</a>
+          <a class="link-secondary" href="contact.html">Contact</a>
+          <a class="link-secondary" href="admissions.html#tuition">Tuition & Fees</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/interactions.js"></script>
+    <script src="assets/js/forms.js"></script>
+  </body>
+</html>
