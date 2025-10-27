@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Engineering College — official brochure website. Programs, admissions, student life, and contact information.">
+    <title>Engineering College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main">Skip to main content</a>
+<nav id="topNav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top border-bottom border-3 border-primary-subtle">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Engineering College</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-programs.html">About & Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="student-life.html">Student Life & News</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="d-flex ms-lg-3">
+        <button id="themeToggle" class="btn btn-outline-light btn-sm" type="button" aria-pressed="false" aria-label="Toggle dark mode">Theme</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="spacer-nav"></div>
+    <main id="main" class="pb-5">
+      <section class="py-5 bg-body-tertiary">
+        <div class="container">
+          <h1 class="h2 mb-3">Admissions Overview</h1>
+          <p>We evaluate applicants holistically with focus on academic preparation, motivation, and potential for success. Applications are reviewed on a rolling basis ahead of each intake.</p>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <h2 class="h4">Application Steps</h2>
+            <ol class="timeline">
+              <li><strong>Create your account</strong> on the Registration page and choose your program.</li>
+              <li><strong>Upload documents</strong> (transcripts, ID scans) after account creation.</li>
+              <li><strong>Submit your application</strong> by the posted deadline.</li>
+              <li><strong>Track status</strong> via email updates and applicant portal notices.</li>
+              <li><strong>Receive decision</strong> and complete enrollment steps.</li>
+            </ol>
+          </div>
+          <div class="col-lg-5" id="tuition">
+            <h2 class="h4">Tuition & Fees (per semester)</h2>
+            <div class="table-responsive">
+              <table class="table table-striped align-middle">
+                <caption class="text-secondary">All amounts are indicative and subject to change.</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Program</th>
+                    <th scope="col" class="text-end">Tuition</th>
+                    <th scope="col" class="text-end">Fees</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Computer Engineering</th>
+                    <td class="text-end">$1,800</td>
+                    <td class="text-end">$150</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Electrical Engineering</th>
+                    <td class="text-end">$1,750</td>
+                    <td class="text-end">$150</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Mechanical Engineering</th>
+                    <td class="text-end">$1,700</td>
+                    <td class="text-end">$150</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Civil Engineering</th>
+                    <td class="text-end">$1,650</td>
+                    <td class="text-end">$150</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="small text-secondary mb-0">Scholarships and financial aid are available based on merit and need.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+<button id="backToTop" class="btn btn-primary position-fixed" style="right:1rem;bottom:1rem;display:none;" aria-label="Back to top">↑</button>
+
+    <footer class="border-top mt-5 py-4">
+      <div class="container small d-flex flex-column flex-md-row justify-content-between gap-3">
+        <div>&copy; <span id="year"></span> Engineering College. All rights reserved.</div>
+        <div class="d-flex gap-3">
+          <a class="link-secondary" href="about-programs.html#faq">FAQ</a>
+          <a class="link-secondary" href="contact.html">Contact</a>
+          <a class="link-secondary" href="admissions.html#tuition">Tuition & Fees</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/interactions.js"></script>
+    <script src="assets/js/forms.js"></script>
+  </body>
+</html>
