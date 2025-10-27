@@ -1,0 +1,39 @@
+
+:root{
+  --rhythm: 1rem;
+}
+*{scroll-margin-top: 6rem;}
+body{font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';}
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;}
+.skip-link:focus{position:static;width:auto;height:auto;margin:0.5rem;display:inline-block;background:#fff;padding:.5rem 1rem;border:2px solid var(--bs-primary);border-radius:.5rem;}
+.spacer-nav{height:4.5rem;} /* offset for fixed nav */
+.hero .lead{max-width: 48ch;}
+.card-img-top{height: 160px; object-fit: cover;}
+
+.timeline{counter-reset: step; list-style: none; padding-left: 0;}
+.timeline li{position:relative;padding-left:2.5rem;margin-bottom:.75rem;}
+.timeline li::before{
+  counter-increment: step;
+  content: counter(step);
+  position:absolute;left:0;top:.1rem;
+  width:2rem;height:2rem;border-radius:50%;
+  display:grid;place-items:center;
+  background: var(--bs-primary);color:#fff;font-weight:700;
+}
+
+.btn:focus, .form-control:focus, .form-select:focus, .form-check-input:focus, .navbar-toggler:focus{
+  outline: 2px solid var(--bs-primary);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.bg-gradient{
+  background: linear-gradient(135deg, rgba(13,110,253,.1), rgba(32,201,151,.1));
+}
+
+#backToTop{z-index: 1080;}
+
+/* Dark mode tweaks */
+[data-bs-theme="dark"] .bg-body-tertiary{
+  background-color: rgba(255,255,255,.05) !important;
+}
