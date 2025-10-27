@@ -30,14 +30,8 @@ All pages share a fixed top navbar with active states, usable on mobile (collaps
 ## Live URL
 Deploy this repository to GitHub Pages and place your link here, e.g.:
 ```
-https://<your-username>.github.io/<repo-name>/
+https://dastanbekov.github.io/midterm-engineering-college-120240026/
 ```
-
-## How to Deploy (GitHub Pages)
-1. Create a public repo (e.g., `midterm-engineering-college-<yourID>`).
-2. Upload all files (preserve folder structure).
-3. In **Settings → Pages**, set **Source** to `Deploy from a branch` and choose `main` branch and `/ (root)`.
-4. Wait for the Pages build to finish; copy the live URL above.
 
 ## Known Limitations
 - Forms are client‑side only (no server). Submissions display confirmation states but do not send email.
